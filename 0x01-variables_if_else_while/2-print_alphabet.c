@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - Entry value
+ * main - Entry point
  *
- * return - Always 0 (success)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char c;
 
-	for (c = 'a'; c <= 'z'; ++c) {
-		putchar(c);
-	}
+	for (c = 'a'; c <= 'z'; ++c) 
+	
+		putchar (c);
+
 	return(0);
 }
