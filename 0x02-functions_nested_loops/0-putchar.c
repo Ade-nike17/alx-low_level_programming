@@ -1,15 +1,11 @@
 #include <stdio.h>
-#include <unistd.h>
+#include "main.h"
 /**
 * main - Entry point
 *
 * Return: Always 0 (Success)
 */
 
-int _putchar(int c) /* defines function putchar */
-{
-	return (write(1, &c, 1));
-}
 int main(void) /* defines function main */
 {
 	_putchar('_');
