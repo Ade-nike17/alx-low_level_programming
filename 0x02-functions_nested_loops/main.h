@@ -1,6 +1,6 @@
-#include <unistd.h>
+#ifndef MAIN_H
+#define MAIN_H
+/* defines putchar function */
+int _putchar(char c);
 
-int _putchar(int c) /* defines function putchar */
-{
-	return (write(1, &c, 1));
-}
+#endif
