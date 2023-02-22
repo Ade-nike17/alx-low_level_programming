@@ -4,9 +4,9 @@
 /**
  * main - entry point
  *
- * return 1 - if char is lowercasw
+ * return value - 1 if char is lowercase and 0 if otherwise
  *
- * return 0 - if otherwise
+ * c - the character to be checked
  */
 
 int _islower(int c)
