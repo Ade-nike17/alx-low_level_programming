@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - function prints the first 59 fibonacci numbers 
+ * main - function prints the first 59 fibonacci numbers
  * starting with 1 and 2
  *
  * Return: Always 0 (succss)
@@ -21,7 +21,7 @@ int main(void)
 		{
 			printf("%ld, ", fibn);
 		}
-		else 
+		else
 		{
 			printf("%ld\n", fibn);
 		}
