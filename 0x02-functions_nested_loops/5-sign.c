@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_sign - checks for the sign of a number 
+ *print_sign - checks for the sign of a number
  *
  *@n: the number to be checked
  *
