@@ -3,10 +3,11 @@
 /**
  * main - Entry point
  *
+ * print_alphabet - makes the alphabets
+ *
  * return 0 - always success
  */
 
-/* funtion print_alphabet - returns no value */
 
 void print_alphabet(void)
 {
