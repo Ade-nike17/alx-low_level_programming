@@ -3,9 +3,9 @@
 /**
  * add - function adds integer
  *
- * num1: first integer
+ * @num1: first integer
  *
- * num2: second integer
+ * @num2: second integer
  *
  * Return: result
  */
