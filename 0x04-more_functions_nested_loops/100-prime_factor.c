@@ -22,7 +22,7 @@ int main(void)
 	{
 		while (x % i == 0)
 		{
-			pf = i; 
+			pf = i;
 			x = x / i;
 		}
 	}
