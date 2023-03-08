@@ -15,11 +15,12 @@ char *leet(char *str)
 	char letters[5] = {'a', 'e', 'o', 't', 'l'};
 
 	int i, j;
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if (str[i] == letters[j] || str[i] == letters[j] -32)
+			if (str[i] == letters[j] || str[i] == letters[j] - 32)
 			{
 				*ptr = leet_code[j];
 				break;
