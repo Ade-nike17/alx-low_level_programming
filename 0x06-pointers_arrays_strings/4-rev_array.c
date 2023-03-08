@@ -13,7 +13,7 @@
 void reverse_array(int *a, int n)
 {
 	int i, temp;
-	
+
 	/* check if i is at the end of string */
 	for (i = 0; i < n / 2; i++)
 	{
