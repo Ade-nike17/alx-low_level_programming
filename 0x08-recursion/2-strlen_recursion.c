@@ -5,7 +5,7 @@
  *
  * @s: string to be counted
  *
- * Retunr: the length of string
+ * Return: the length of string
  */
 
 int _strlen_recursion(char *s)
