@@ -1,28 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * main - entry point
+ * main - callout function
  *
- * @argc: argument count
- * @argv: argument vector
+ * @argc: argument counter
+ * @argv: argument value
  *
- * Return: 0 on success, non-zero on failure
+ * Return: multiplier
  */
 int main(int argc, char *argv[])
 {
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[2]);
-	int product = num1 * num2;
+	int i, prod;
 
-	if (argc != 3)
+	for (i = 1; i < argc; i++)
 	{
-		fprintf(stderr, "Usage: %s <num1> <num2>\n", argv[0]);
-		return (1);
+		if (argc >= 3)
+		{
+			prod = atoi(argv[1]) * atoi(argv[2]);
+			printf("%d\n", prod);
+			return (0);
+		}
+		else
+		{
+			perror("Error: ");
+		}
 	}
-
-	printf("%d\n", product);
-
-	return (0);
+	return (1);
 }
-
