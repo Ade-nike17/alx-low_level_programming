@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * is_Integer - checks if s is an integer
  *
@@ -11,6 +12,7 @@
 int is_Integer(const char *s)
 {
 	int i = 0;
+
 	while (s[i] != '\0')
 	{
 		if (s[i] < '0' || s[i] > '9')
