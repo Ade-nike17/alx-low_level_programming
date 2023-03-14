@@ -14,13 +14,18 @@ char *_strdup(char *str)
 {
 	char *mem = NULL;
 	size_t i;
+	
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
 	for (i = 0; str[i] != '\0'; i++)
 		;
 
 	mem = (char *)malloc(i + 1 * sizeof(char));
 
-	if (mem == NULL || str == NULL)
+	if (mem == NULL)
 	{
 		return (NULL);
 	}
