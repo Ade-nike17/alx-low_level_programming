@@ -11,22 +11,26 @@
  * Return: ptr to newly created array
  */
 
-
 int *array_range(int min, int max)
 {
-	int *ptr;
-	int i;
+	int *arr, i;
 
 	if (min > max)
+	{
 		return (NULL);
+	}
 
-	ptr = malloc(sizeof(int) * (max - min + 1));
-	if (ptr == NULL)
+	arr = malloc(sizeof(int) * (max - min + 1));
+
+	if (arr == NULL)
+	{
 		return (NULL);
+	}
 
 	for (i = 0; i < max - min + 1; i++)
-		ptr[i] = min + 1;
+	{
+		arr[i] = min + i;
+	}
 
-	return (ptr);
-
+	return (arr);
 }
