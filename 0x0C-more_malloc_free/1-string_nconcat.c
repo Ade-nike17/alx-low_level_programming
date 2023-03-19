@@ -16,25 +16,24 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *ptr;
 	size_t str1, str2;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
 	str1 = strlen(s1);
-	str2 = strlen(s2);
-
-	if (s1 == NULL)
-		return ("");
-	if (s2 == NULL)
-		return ("");
+        str2 = strlen(s2);
 
 	if (n >= str2)
 		n = str2;
 
-	ptr = malloc(sizeof(char) * str1 + n + 1);
+	ptr = malloc(sizeof(char) * (str1 + n + 1));
 	if (ptr == NULL)
 		return (NULL);
 
 	memcpy(ptr, s1, str1);
 	memcpy(ptr + str1, s2, n);
-	ptr[str1 + n + 1] = '\0';
+	ptr[str1 + n] = '\0';
 
 	return (ptr);
 }
