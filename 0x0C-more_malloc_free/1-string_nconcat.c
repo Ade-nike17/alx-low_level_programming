@@ -21,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	str2 = strlen(s2);
 
 	if (s1 == NULL || s2 == NULL)
-		return ('\0');
+		return ("");
 
 	if (n >= str2)
 		n = str2;
