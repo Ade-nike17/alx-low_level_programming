@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	memcpy(ptr, s1, str1);
 	memcpy(ptr + str1, s2, n);
-	ptr[str1 + n + 1] = '\0';
+	ptr[str1 + n] = '\0';
 
 	return (ptr);
 }
