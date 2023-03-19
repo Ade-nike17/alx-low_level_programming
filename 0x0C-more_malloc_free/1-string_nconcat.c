@@ -17,15 +17,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	size_t str1, str2;
 
 	str1 = strlen(s1);
-	str2 = n;
+	str2 = strlen(s2);
 
 	if (s1 == NULL || s2 == NULL)
 		return ('\0');
 
 	if (n >= strlen(s2))
-		str2 = strlen(s2);
+		n = str2;
 
-	ptr = malloc(sizeof(char) * str1 + str2 + 1);
+	ptr = malloc(sizeof(char) * str1 + n + 1);
 	if (ptr == NULL)
 		return (NULL);
 
