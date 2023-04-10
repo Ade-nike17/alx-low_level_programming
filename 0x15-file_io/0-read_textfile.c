@@ -5,9 +5,10 @@
 
 
 /**
- * read_textfile - pointer to the file
+ * read_textfile - function reads and prints a textfile to the POSIX STDOUT
  *
- * @leters: number of letter to be read and printed
+ * @filename: pointer to the file
+ * @letters: number of letter to be read and printed
  *
  * Return: number of letters it could read and print
  */
@@ -38,7 +39,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
-	if (bytes_written == -1 || bytes_read != bytes_written)
+	if (bytes_written == -1 || bytes_written != bytes_read)
 	{
 		close(fd);
 		return (0);
