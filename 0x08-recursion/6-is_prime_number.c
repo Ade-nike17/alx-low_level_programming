@@ -6,7 +6,7 @@
  *
  * @n: number to be checked for divisibility
  * @divisor: number to divide n by
- * 
+ *
  * Return: 1 if prime or 0 if not prime
  */
 
@@ -25,7 +25,7 @@ int prime_helper(int n, int divisor)
 
 
 /**
- * is_prime_number - function checks if n is a prime 
+ * is_prime_number - function checks if n is a prime
  *
  * @n: number to be checked
  * Return: value of prime helper
