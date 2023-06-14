@@ -21,22 +21,19 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	i = 1, sum = 0;
+	sum = 0;
 
-	while (argv[i] != NULL)
+	for (i = 1; i < argc; i++)
 	{
-		j = 1;
-		while (*argv[i] != '\0')
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
 			}
-			j++;
 		}
 		sum += atoi(argv[i]);
-		i++;
 	}
 	printf("%d\n", sum);
 	return (0);
