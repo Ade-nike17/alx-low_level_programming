@@ -1,0 +1,23 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * malloc_checked - func allocates mem using malloc
+ *
+ * @b: param to allocate memory for
+ *
+ * Return: ptr to allocated mem
+ */
+
+void *malloc_checked(unsigned int b)
+{
+	void *ptr;
+
+	ptr = malloc(b);
+	if (ptr == NULL)
+	{
+		exit(98);
+	}
+	return (ptr);
+}
