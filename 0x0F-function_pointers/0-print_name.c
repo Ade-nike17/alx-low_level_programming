@@ -5,7 +5,7 @@
  * print_name - function prints a name
  *
  * @name: name to be printed
- * @f: function pointer takes char * as arg and returns void
+ * @f: function pointer takes char * as arg
  *
  * Retuen: void
  */
@@ -16,5 +16,4 @@ void print_name(char *name, void (*f)(char *))
 	{
 		f(name);
 	}
-	return;
 }
