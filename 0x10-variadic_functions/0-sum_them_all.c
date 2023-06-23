@@ -7,6 +7,7 @@
  * sum_them_all - function sums all its params
  *
  * @n: first arg
+ * @...: a variable number of args
  *
  * Return: sum of all params
  */
