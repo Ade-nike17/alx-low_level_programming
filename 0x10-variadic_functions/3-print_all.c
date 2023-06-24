@@ -14,7 +14,7 @@
 void print_all(const char * const format, ...)
 {
 	char c;
-	int i, is _first_arg;
+	int i, is_first_arg;
 	float f;
 	char *s;
 	const char *ptr;
