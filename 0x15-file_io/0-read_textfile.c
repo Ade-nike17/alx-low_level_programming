@@ -31,7 +31,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		if (bytesRead == 0)
 			break;
 		count += bytesRead;
-		fwrite(buffer, sizeof(char), bytesRead, stdout);
+		bytesRead = fwrite(buffer, sizeof(char), bytesRead, stdout);
+		if  (bytesRead == 0)
+			break;
 	}
 
 	fclose(fd);
