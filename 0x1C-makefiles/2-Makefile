@@ -1,0 +1,12 @@
+# This is a comment line
+CC = gcc
+# SRC will be the .C files
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+
+# Name is the name of the executable
+NAME = school
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
