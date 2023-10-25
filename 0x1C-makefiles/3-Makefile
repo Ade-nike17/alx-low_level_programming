@@ -1,0 +1,24 @@
+# This is a comment line
+CC = gcc
+# SRC will be the .C files
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+
+# Name is the name of the executable
+NAME = school
+
+# The program to deleter files
+RM = rm -f
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re : oclean all
