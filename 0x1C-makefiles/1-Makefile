@@ -1,6 +1,0 @@
-# This is a comment line
-CC = gcc
-# The .c files to be compiled
-SRC = main.c school.c
-all : $(SRC)
-	$(CC) $(SRC) -o school
