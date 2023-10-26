@@ -14,7 +14,7 @@ RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # To make sure Makefile rules are not confised with files
-.PHONY : all clean oclean fclean re
+.PHONY: all clean oclean fclean re
 
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
@@ -27,5 +27,4 @@ oclean:
 
 fclean: clean oclean
 
-re : oclean all
-
+re : fclean all
